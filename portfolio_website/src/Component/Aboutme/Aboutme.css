@@ -1,0 +1,157 @@
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    font-weight: 500;
+    background: linear-gradient(105deg,#d2dfd1,#e9d4db);
+    margin-top: 0px;
+    animation: fadeIn 2s ease-in;
+  }
+
+
+.about-me-image {
+  width: 351px; 
+  height: 512px;
+  border-radius: 10px; 
+  margin-bottom: 2px;
+  animation: zoomIn 1s ease-out;
+}
+
+.about-me-content {
+  text-align: center;
+}
+
+.about-me-title {
+  font-size: 60px;
+  text-align: center;
+  background: linear-gradient(0deg, #ff4081, #82b1ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: slideInDown 1s ease-out;
+  margin-bottom: 10px;
+  animation: slideInDown 1s ease-out;
+}
+
+.about-me-text {
+  font-size: 1.2em;
+    margin-bottom: 30px;
+    background: linear-gradient(0deg, #fb3577, #5596ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: slideInDown 1s ease-out;
+  margin: 0 auto;
+  max-width: 600px;
+  animation: slideInUp 1s ease-out;
+}
+
+.about-me-skills {
+  margin-top: 30px;
+}
+
+.skills-title {
+  font-size: 2em;
+    margin-bottom: 30px;
+    background: linear-gradient(180deg, #ff4081, #82b1ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: slideInDown 1s ease-out;
+  margin-bottom: 10px;
+  animation: slideInLeft 1s ease-out;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.skills-item {
+  font-size: 1.5em;
+  color: #82b1ff;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slideInRight 1s ease-out;
+}
+
+.skill-bar {
+  width: 80%;
+  height: 10px;
+  background: #a7a7a7;
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background: linear-gradient(90deg, #ff4081, #82b1ff);
+  border-radius: 5px;
+  animation: growSkill 2s ease-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes growSkill {
+  from {
+    width: 0;
+  }
+  to {
+    width: inherit;
+  }
+}

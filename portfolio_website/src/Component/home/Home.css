@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg,#d2dfd1,#e9d4db);
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .home-image {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 20px;
+    animation: zoomIn 1s ease-out;
+  }
+  
+  .home-title {
+    font-size: 3em;
+    margin-bottom: 30px;
+    background: linear-gradient(0deg, #ff4081, #82b1ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: slideInDown 1s ease-out;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 3s infinite;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+  }
+  .intro {
+    font-size: 1.2em;
+    max-width: 800px;
+    color: #ff4081;
+  }
+  .home-subtitle {
+    font-size: 1.5em;
+    color: #82b1ff; /* Light blue color */
+    margin: 20px 0;
+    animation: slideInRight 1s ease-out;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+ 
+  
+  @keyframes expand {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100px;
+    }
+  }
+  
+.home-action{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}  
+.home-connect{
+  padding: 24px 45px;
+  border-radius: 40px;
+  background: linear-gradient(45deg,#82b1ff,#ff4081);
+  cursor: pointer;
+}
+.home-resume{
+  padding: 24px 45px;
+  border-radius: 40px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+.home-connect:hover{
+  border: 2px solid #ffffff;
+}
+
+.home-resume:hover{
+  border: 2px solid #c800ff;
+}
+

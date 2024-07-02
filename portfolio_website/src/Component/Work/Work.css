@@ -1,0 +1,113 @@
+
+.mywork-container {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(45deg,#d2dfd1,#e9d4db);
+  max-width: 7000px; /* Adjusted max width */
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.work-title {
+  font-size: 3em;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #ff4081, #82b1ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: slideInDown 1s ease-out;
+}
+
+.mywork-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    animation: fadeIn 2s ease-in;
+}
+
+.image-container {
+  position: relative;
+  height: 300px; 
+  border-radius: 10px;
+  width: 400px;
+  overflow: hidden;
+  margin-bottom: 30px; /* Space between instances */
+}
+
+.bottom-image, .top-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0px;
+  height: 300px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.label.before {
+  left: 10px;
+}
+
+.label.after {
+  right: 10px;
+}
